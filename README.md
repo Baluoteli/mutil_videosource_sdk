@@ -1,2 +1,1 @@
-# mutil_videosource_sdk
 mutil_videosource_sdk

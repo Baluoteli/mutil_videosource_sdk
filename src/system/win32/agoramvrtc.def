@@ -1,0 +1,5 @@
+LIBRARY   agora_rtm_sdk
+EXPORTS
+   createAgoraService   @1
+   getAgoraSdkVersion   @2
+   getAgoraSdkErrorDescription   @3

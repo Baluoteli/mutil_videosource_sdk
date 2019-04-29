@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 2.8)
+project(agora_mvrtc_sdk)
+
+IF (WIN32)
+	set(TARGET_NAME agora_mvrtc_sdk)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/common)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/transfer)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/videosource)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/mutilvideoManager)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/test)
+ELSEIF (APPLE)
+ENDIF()

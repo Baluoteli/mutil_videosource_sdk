@@ -14,6 +14,15 @@ IF (WIN32)
         ${CMAKE_CURRENT_SOURCE_DIR}/mutilvideomanager.cpp
     )
 
+    add_definitions(-DAGORARTC_EXPORT)
+    set(SRCPATH2 ${INCLUDE_PATH_ROOT}/../src/system/win32)
+    list (APPEND SOURCES
+            ${SRCPATH2}/dllmain.cpp
+            ${SRCPATH2}/resource.h
+            ${SRCPATH2}/agoramvsdk.rc
+            ${SRCPATH2}/agoramvrtc.def
+        )
+
     list (APPEND PUBLIC_LINK_LIBS common transfer)
 
     #include path

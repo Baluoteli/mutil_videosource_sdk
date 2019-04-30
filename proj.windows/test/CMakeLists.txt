@@ -17,15 +17,17 @@ IF (WIN32)
     list (APPEND PUBLIC_LINK_LIBS common transfer agora_mvrtc_sdk)
 
     #include path
-    include_directories(${INCLUDE_PATH_ROOT}/include ${INCLUDE_PATH_ROOT}/src)
+    include_directories(
+        ${INCLUDE_PATH_ROOT}/include 
+        ${INCLUDE_PATH_ROOT}/src)
 
     #lib path
     LINK_DIRECTORIES(${CMAKE_CURRENT_SOURCE_DIR}/../bin)
 
     #output path
-    set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin) 
+    set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin) 
 
-    #generator share dll.
+    #generator executabl.
     add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
 
 ELSEIF(XCODE)

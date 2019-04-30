@@ -40,12 +40,12 @@ BEGIN
         BLOCK "080404b0"
         BEGIN
             VALUE "CompanyName", "Agora.io"
-            VALUE "FileDescription", "AGORA RTM SDK"
+            VALUE "FileDescription", "AGORA MVRTC SDK"
             VALUE "FileVersion", "2.3.0.0"
             VALUE "InternalName", "Agora.io"
             VALUE "LegalCopyright", "Agora.io Copyright (C) 2019"
-            VALUE "OriginalFilename", "agora_rtm_sdk.dll"
-            VALUE "ProductName", "agora_rtm_sdk.dll"
+            VALUE "OriginalFilename", "agora_mvrtm_sdk.dll"
+            VALUE "ProductName", "agora_mvrtm_sdk.dll"
             VALUE "ProductVersion", "2.3.0.0"
         END
     END

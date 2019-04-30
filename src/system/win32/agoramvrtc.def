@@ -1,5 +1,4 @@
-LIBRARY   agora_rtm_sdk
+LIBRARY   agora_mvrtc_sdk
 EXPORTS
-   createAgoraService   @1
-   getAgoraSdkVersion   @2
-   getAgoraSdkErrorDescription   @3
+   CreateCommmonEngine   @1
+   

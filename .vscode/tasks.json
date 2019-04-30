@@ -1,4 +1,13 @@
 {
-  "tasks": [],
+  "tasks": [
+    {"label": "build_debug",
+    "group": {
+      "kind": "build",
+      "isDefault": true
+    },
+    "type": "shell",
+    "command":"",
+  }
+  ],
   "version": "2.0.0"
 }

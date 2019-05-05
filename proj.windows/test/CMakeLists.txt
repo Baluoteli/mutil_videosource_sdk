@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project(test)
 
+include (../common.cmake)
+
 set (INCLUDE_PATH_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/..)
 
 message("=====Begin CMake Project " ${PROJECT_NAME} " =====")

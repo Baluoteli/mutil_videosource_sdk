@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project(videosource)
 
+include (../common.cmake)
+
 set (INCLUDE_PATH_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/../../include)
 set (INCLUDE_PATH_RTCSDK ${CMAKE_CURRENT_SOURCE_DIR}/../../src/system/win32/sdk/include)
 

@@ -12,9 +12,10 @@ if exist %DEST_ROOT% goto DONE_CHECK_DIR_X64
 mkdir %DEST_ROOT_X64%
 :DONE_CHECK_DIR_X64
 
+mkdir .\bin\debug
+mkdir .\bin\release
+
 @echo off
 cd %DEST_ROOT%
 echo localPath: %cd%
 cmake -T v120_xp -G "Visual Studio 12 2013" ..\..
-
-

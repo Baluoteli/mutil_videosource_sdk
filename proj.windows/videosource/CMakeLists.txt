@@ -31,6 +31,21 @@ IF (WIN32)
     
     #generator executable
     add_executable(${PROJECT_NAME} ${HEADERS} ${SOURCES})
+    
+    #copy rtcsdk dll to bin executable directory.
+    IF (EXISTS ${PROJECT_SOURCE_DIR}/../bin/debug)
+        message("debug command")
+        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+            COMMAND(copy ${CMAKE_CURRENT_SOURCE_DIR}/../../src/system/win32/sdk/dll/** ${PROJECT_SOURCE_DIR}/../bin/debug/**)
+        )
+    ENDIF()
+
+    IF (EXISTS ${PROJECT_SOURCE_DIR}/../bin/release)
+        message("release command")
+        add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+        COMMAND(copy ${CMAKE_CURRENT_SOURCE_DIR}/../../src/system/win32/sdk/dll/** ${PROJECT_SOURCE_DIR}/../bin/release/**)
+    )
+    ENDIF()
 
 ELSEIF(XCODE)
 

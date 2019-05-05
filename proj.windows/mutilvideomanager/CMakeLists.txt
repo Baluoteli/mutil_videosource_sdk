@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8)
 project(mutilvideomanager)
 
+include (../common.cmake)
+
 set (INCLUDE_PATH_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/..)
 
 message("=====Begin CMake Project " ${PROJECT_NAME} " =====")
@@ -34,7 +36,7 @@ IF (WIN32)
     #output path
     set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin) 
 
-    #generator lib vcxproj
+    #generator lib vcxproj   
     set(TARGET_NAME agora_mvrtc_sdk)
     add_library(${TARGET_NAME} SHARED ${HEADERS} ${SOURCES})
 
